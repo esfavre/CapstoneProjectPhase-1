@@ -1,11 +1,11 @@
 use client_database;
 
 insert into ClientMeetings 
-    (name, email, phone, address)
+    (meeting_topic, num_of_people, meeting_date_time, cid)
     Values
-    ('Cloud Strife', 'cloud.strife@avalanche.com', '123-456-7890', '100 Materia Way, Sector 7 Slums, Midgard 70000'),
-    ('Tifa Lockhart', 'tifa.lockhart@avalanche.com', '246-781-0124', '101 Materia Way, Sector 7 Slums, Midgard 70000'),
-    ('Barret Wallace', 'barret.wallace@avalance.com', '135-791-1135', '50 Chocobo Lane, Sector 7 Slums, Midgard 70000'),
-    ('Aerith Gainsborough', 'aerith.gainsborough@s5sflowershop.com', '824-679-1346','65 Ancient Boulevard, Sector 5 Slums, Midgard 50000')
+    ('New Bar', 5, 2024-05-01 10:00:00, 2),
+    ('Flower Shop Front', 2, 2024-04-20 08:00:00, 4),
+    ('Avalanche Base', 10, 2024-06-15 12:30:00, 3),
+    ('Apartment Complex', 1, 2024-03-28 02:30:00, 1)
 ;
 select * from ClientMeetings;

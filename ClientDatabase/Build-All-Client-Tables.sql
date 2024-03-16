@@ -15,7 +15,9 @@ create Client(
 create ClientMeetings(
     cmid int PRIMARY KEY AUTO_INCREMENT,
     meeting_topic varchar(256),
+    num_of_people int,
     meeting_date_time  datetime(fsp), NOT NULL
+    cid int,
     CONSTRAINT fk_client_meetings FOREIGN KEY (cid)
     REFERENCES Client(cid)
 );
