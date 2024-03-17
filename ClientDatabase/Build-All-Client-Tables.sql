@@ -1,12 +1,13 @@
 create database if not exists client_database;
 
 use client_database;
-drop table if exists ClientMeetings;
 drop table if exists Client;
+drop table if exists ClientMeetings;
+
 
 create table Client(
-    cid int PRIMARY KEY AUTO_INCREMENT,
-    name  varchar(256) NOT NULL,
+    cid int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name  varchar(256) NOT NULL UNIQUE,
     email varchar(256) NOT NULL UNIQUE,
     phone varchar(16),
     address varchar(256)

@@ -1,14 +1,14 @@
 use client_database;
 
---Queries
+-- Queries
 
-select * from Client
+select name from Client
 order by name;
 
 select * from Client
 where name like 'C%';
 
-select * from Client 
+select name, address from Client 
 where address like '%70000%';
 
 select * from Client
@@ -27,12 +27,25 @@ select * from ClientMeetings
 where cid = 6;
 
 
---Relate Tables
+-- Relate Tables
+
+select name, phone, email, meeting_topic, meeting_date_time
+from Client 
+     INNER JOIN
+     ClientMeetings
+  on ClientMeetings.cmid = Client.cid
+  order by name
+;
+
+select name, meeting_topic, num_of_people, meeting_date_time
+from Client 
+     INNER JOIN
+     ClientMeetings
+  on Client.cid = ClientMeetings.cmid
+  ;
 
 
-
-
---Update Tables
+-- Update Tables
 
 
 update Client 
@@ -59,7 +72,7 @@ where cmid = 1;
 
 select * from ClientMeetings;
 
---Delete Tables
+-- Delete Tables
 
 delete from Client
 where name = 'Jessie Rasberry';
