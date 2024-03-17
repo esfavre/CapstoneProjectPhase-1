@@ -7,13 +7,8 @@ insert into ClientMeetings
     ('Flower Shop Front', 2, '2024-04-20 08:00:00', 4),
     ('Avalanche Base', 10, '2024-06-15 12:30:00', 3),
     ('Apartment Complex', 1, '2024-03-28 02:30:00', 1),
-    ('Sector 7 Plate Reconstruction', 3, '2024-03-19 07:30:00', 6)
+    ('Sector 7 Plate Reconstruction', 8, '2024-03-19 07:30:00', 6),
+    ('Sector 7 Slums Reconstruction', 8, '2024-03-20 07:30:00', 6)
 ;
 select * from ClientMeetings;
-
-select * from ClientMeetings
-order by meeting_date_time;
-
-select * from ClientMeetings
-where num_of_people > 1;
 
