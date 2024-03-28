@@ -1,5 +1,8 @@
 <form  id="theForm" (ngSubmit)="onSubmit()">
-
+    <header>
+        <h1>Schedule a Meeting</h1>
+        <h4>Please fill out the meeting form to schedule a meeting.</h4>
+    </header>
     <div>
         <label for="topicnamefield">Meeting Topic:</label>
         <input type="text" id="topicnamefield" [(ngModel)]="meetingTopic" name="meetingTopic"/>
