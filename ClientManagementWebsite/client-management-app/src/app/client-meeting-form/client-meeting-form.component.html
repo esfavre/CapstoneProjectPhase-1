@@ -1,1 +1,24 @@
-<p>client-meeting-form works!</p>
+<form  id="theForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label for="topicnamefield">Meeting Topic:</label>
+        <input type="text" id="topicnamefield" [(ngModel)]="meetingTopic" name="meetingTopic"/>
+    </div>
+    <div>
+        <br>
+        <label for="numpeoplefield">Number of People:</label>
+        <input type="text" id="numpeoplefield" [(ngModel)]="numberOfPeople" name="numberOfPeople"/>
+    </div>
+
+    <div>
+        <br>
+        <label for="meetingdatetime"> Meeting Date and Time:</label>
+        <input type="datetime-local" id="meetingdatetime" [(ngModel)]="meetingDateTime" name="meetingDateTime">
+    </div>
+
+    <div>
+        <br>  
+        <input type="submit" value="Click to Submit"/> 
+    </div>
+
+</form>

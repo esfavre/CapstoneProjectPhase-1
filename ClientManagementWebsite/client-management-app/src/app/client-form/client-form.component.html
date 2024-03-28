@@ -5,19 +5,15 @@
         <input type="text" id="fnamefield" [(ngModel)]="fname" name="fname"/>
     </div>
     <div>
+        <br>
         <label for="lnamefield">Last Name:</label>
         <input type="text" id="lnamefield" [(ngModel)]="lname" name="name"/>
     </div>
-    <!-- type="date" generates a basic date picker on the page -->
-    <!-- the select tag creates a dropdown list                                 -->
-    <!-- the [(ngModel)]="" on the select tag is the name of the variable to hold data -->
-    <!-- the option tags within the select tag provide the choices              -->
-    <!-- the value="" in the option tag is what gets stored for the choice      -->
-    <!-- the content of the option tag is what is displayed as the choice       -->
     <div>
-        <label for="email-address">What's your email adddress:</label>
+        <br>
+        <label for="email-address">Email Address:</label>
         <input type="text" id="email-address" [(ngModel)]="email" name="email"/>
-
+        <br>
         <br>
         May we contact you regarding any future promotions?
             <input type="radio" id="emailyesfield"  [(ngModel)]="email_preference" value="yes" name="email_preference"/>
